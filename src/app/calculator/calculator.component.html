@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>may tinh co ban</title>
+  <style>
+    #result {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+<h2>Caculator</h2>
+<table style="width: 300px">
+  <tr>
+    <td>
+      <label for="input1">
+        <input type="number" id="input1" name="num1" [(ngModel)]="num1">
+      </label>
+    </td>
+    <td>
+      <label for="input2">
+        <input type="number" id="input2" name="num2"[(ngModel)]="num2">
+      </label>
+    </td>
+  </tr>
+</table>
+<table style="width: 300px">
+  <tr>
+    <td>
+      <button (click)="add()">Addition(+)</button>
+    </td>
+    <td>
+      <button (click)="sub()">subtraction(-)</button>
+    </td>
+    <td>
+      <button (click)="Mul()">Multiplication(/)</button>
+    </td>
+    <td>
+      <button (click)="Div()">Divition(*)</button>
+    </td>
+  </tr>
+</table>
+<p id="result">Result = {{num3}}</p>
+</body>
+</html>
+
